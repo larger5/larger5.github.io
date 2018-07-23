@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        height: 180px;
+        overflow: hidden;
+    }
+
+    .box-show {
+        height: 200px;
+    }
+
+    .box-img {
+        position: relative;
+        /* height: 200px; */
+    }
+
+    .box-img>img {
+        /* position: absolute; */
+        /* top: auto; */
+        /* left: 50%; */
+        /* z-index: 3; */
+        width: 120px;
+        height: 120px;
+        background-color: #fff;
+        border-radius: 50%;
+        /* opacity: 1; */
+        /* 这样就是有一来一回的动画了 */
+        transition: 0.5s ease
+    }
+
+    .box-show {
+        text-align: center;
+    }
+
+    .box-word {
+        height: auto;
+    }
+/* 
+    .box-img>.height {
+        height: 0;
+        transition: 0.5s ease-in;
+    } */
+
+    .box:hover > .box-show > .box-img > img{
+        height: 0;
+        
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box col-md-4 col-xs-12">
+            <div class="box-show">
+                <div class="box-img">
+                    <img src='image/zen.png'>
+                </div>
+                <div class="box-word">
+                    <div class="box-name">
+                        曾亮辉
+                    </div>
+                    <div class="box-wisdom">
+                        生活是面镜子，你对他笑，它就对你笑；你对他哭，它也会对你哭
+                    </div>
+                    <div class="box-detail">
+                        主要发展方向 后端、安卓、算法设计
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box col-md-4 col-xs-12">
+            <div class="box-show">
+                <div class="box-img">
+                    <img src='image/zen.png'>
+                </div>
+                <div class="box-word">
+                    <div class="box-name">
+                        曾亮辉
+                    </div>
+                    <div class="box-wisdom">
+                        生活是面镜子，你对他笑，它就对你笑；你对他哭，它也会对你哭
+                    </div>
+                    <div class="box-detail">
+                        主要发展方向 后端、安卓、算法设计
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box col-md-4 col-xs-12">
+            <div class="box-show">
+                <div class="box-img">
+                    <img src='image/zen.png'>
+                </div>
+                <div class="box-word">
+                    <div class="box-name">
+                        曾亮辉
+                    </div>
+                    <div class="box-wisdom">
+                        生活是面镜子，你对他笑，它就对你笑；你对他哭，它也会对你哭
+                    </div>
+                    <div class="box-detail">
+                        主要发展方向 后端、安卓、算法设计
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+    // $('.box').hover(function () {
+    //     // alert(1)
+    //     $('.box-img > img').addClass('height')
+    // }, function () {
+    //     $('.box-img > img').removeClass('height').css('transition', '0.5s')
+    // })
+window.onload =function(){
+    var xhr = new XMLHttpRequest();
+
+        xhr.open('get',"http://vernon.ngrok.cc/itaem/blog/type/all/1/3")
+
+        xhr.send(null) 
+
+        xhr.onreadystatechange =function(){
+            if(xhr.status==200 && xhr.readyState==4){
+                var data = xhr.responseText;
+                console.log(data)
+            }
+        }
+}
+</script>

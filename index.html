@@ -1,1 +1,654 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>ITAEM主页</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <!--[if lt IE 9]>
+    <div class="browserupgrade">
+         <div class="tip">"Duang"，你被鄙视了，还在用这么Low的浏览器，快去升级吧！</div>
+         <div class="tip-author"> -by AlloyTeam </div>
+         <a href=" http://browsehappy.osfipin.com/ ">点我去升级</a>
+     </div>
+     <style>.main{display:none}</style>
+ <![endif]-->
+    <!-- 头部导航栏 -->
+    <header id="header" class="header">
+        <div class="container">
+            <!-- logo -->
+            <h1 class="logo">
+                <a>
+                    <img src='image/logo5.jpg'>
+                </a>
+                <a href="#">
+                    <img src='image/logo2.png'>
+                </a>
+            </h1>
+            <nav class="navbar" role="navigation">
+                <!-- 手机端按钮 -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle nav-toggle1" data-toggle="collapse" data-target="#example-navbar-collapse" id="btn">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- 导航栏 -->
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">首页</a>
+                            <img src='image/nav.jpg'>
+                        </li>
+                        <li>
+                            <a href="#">博客</a>
+                            <img src='image/nav.jpg'>
+                        </li>
+                        <li>
+                            <a href="#">superstar</a>
+                            <img src='image/nav.jpg'>
+                        </li>
+                        <li>
+                            <a href="#">加入我们</a>
+                            <img src='image/nav.jpg'>
+                        </li>
+                    </ul>
+            </nav>
+            </div>
+    </header>
+
+    <!-- 中间banner  -->
+    <div class="focus">
+        <div class="images" id="img">
+            <div class="item">
+                <a href="#1" target="blank">
+                    <img src="image/banner1.jpg" />
+                    <div class="item-info">
+                        <p class='active name'>欢迎来到ITAEM</p>
+                        <p class="active des">地点：钟海楼04008</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#2" target="blank">
+                        <img src="image/banner2.jpg" />
+                        <div class="item-info">
+                            <p class="name">获奖情况</p>
+                            <p class="des">2017年中国软件杯总决赛三等奖</p>
+                        </div>
+                    </a>
+            </div>
+            <div class="item">
+                <a href="#3" target="blank">
+                    <img src="image/banner3.jpg" />
+                    <div class="item-info">
+                        <p class="name">作品简介</p>
+                        <p class="des">智能词典</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="control">
+            <span><a href="#1"></a></span>
+            <span><a href="#2"></a></span>
+            <span><a href="#3"></a></span>
+        </div>
+    </div>
+
+    <!-- 团队方向 -->
+    <div class="direction">
+        <div class="container content">
+            <div class="contain-head">
+                <h1>团队方向</h1>
+                <div class="line"></div>
+                <p>ORIENTATION</p>
+            </div>
+            <div class="contain-content">
+                <p>给我们的一个平台，我们还你一个闪光的未来</p>
+                <p>我们的梦想不仅仅是单方向的独当一面，更多是多方向的涉猎</p>
+            </div>
+        </div>
+        <div class="container container-img">
+            <div class="col-md-3 col-sm-6 col-xs-12 col">
+                <a href="#1">
+                    <div class="article_1 article">
+                        <h3><img src='image/进入后台.png'></h3>
+                        <span class="art-line"></span>
+                        <p>JAVA后台(算法)</p>
+                    </div>
+                    <em class="em"></em>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 col">
+                <a href="#2">
+                    <div class="article_2 article">
+                        <h3><img src='image/前端开发.png'></h3>
+                        <span class="art-line"></span>
+                        <p>前端开发</p>
+                    </div>
+                    <em class="em"></em>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 col">
+                <a href="#3">
+                    <div class="article_3 article">
+                        <h3><img src='image/安卓定制开发.png'></h3>
+                        <span class="art-line"></span>
+                        <p>安卓App开发</p>
+                    </div>
+                    <em class="em"></em>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 col">
+                <a href="#4">
+                    <div class="article_4 article">
+                        <h3><img src='image/美工.png'></h3>
+                        <span class="art-line"></span>
+                        <p>UI美工</p>
+                    </div>
+                    <em class="em"></em>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 团队作品 -->
+    <div class="works">
+        <div class="container content">
+            <div class="contain-head">
+                <h1>团队作品</h1>
+                <div class="line"></div>
+                <p>PRODUCT</p>
+            </div>
+            <div class="contain-content">
+                <p>好的作品就是用来炫技</p>
+            </div>
+        </div>
+        <div class="container container-word">
+            <div class="col-md-4 col-xs-12 col1">
+                <div class="container-img1">
+                    <img src='image/yichuan.jpg'>
+                </div>
+                <div class="mask"></div>
+                <div class="container-content">
+                    <p>一款面对面高速文件传输软件。 传输终端支持安卓，ios和PC端.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12 col1">
+                <div class="container-img1">
+                    <img src='image/时光机.jpg'>
+                </div>
+                <div class="mask"></div>
+                <div class="container-content">
+                    <p>“时光机”是一款完全公开的地理位置及个人动态分享软件.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12 col1">
+                <div class="container-img1">
+                    <img src='image/yichuan.jpg'>
+                </div>
+                <div class="mask"></div>
+                <div class="container-content">
+                    <p>一款以语音操作为主的英文查词APP，以语音驱动完成使用.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="big-box">
+            <div class="box">
+                <div class="more" style="float:left">
+                    <div class="col-sm-7 more-word">
+                        更多
+                    </div>
+                    <div class="col-sm-5">
+                        <img src='image/方向箭头-向右.png'>
+                    </div>
+                </div>
+                <div class="more" style="background-color:#008cff; float:left">
+                    <div class="col-sm-7 more-word" style="color:white;">
+                        更多
+                    </div>
+                    <div class="col-sm-5">
+                        <img src='image/方向箭头-向上.png'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 博客 -->
+    <div class="blog">
+        <div class="container content">
+            <div class="contain-head">
+                <h1>博客</h1>
+                <div class="line"></div>
+                <p>BLOG</p>
+            </div>
+            <div class="contain-content">
+                <p>我们是概念的生物，对软件的理解是抽象的</p>
+            </div>
+        </div>
+        <div class="container blog-container">
+            <div class="col-md-5 col-xs-12 blog-border" id="Blo">
+                <div class="laster-blog">
+                    <span>最新博客</span>
+                    <span><a href="#">More</a></span>
+                </div>
+                <!-- <a href="#1">
+                    <div class="blog-content">
+                        <div class="blog-info ">
+                            <div class="blog-name col-xs-6">
+                                WEB项目管理
+                            </div>
+                            <div class="blog-day col-xs-6">
+                                01/01/2017
+                            </div>
+                        </div>
+                        <div class="blog-detail">
+                            提供8万余种旅游产品供消费者选择，涵盖跟团，自助，自驾，酒店
+                        </div>
+                    </div>
+                </a> -->
+
+                <!-- <a href="#2">
+                    <div class="blog-content">
+                        <div class="blog-info ">
+                            <div class="blog-name col-xs-6">
+                                WEB项目管理
+                            </div>
+                            <div class="blog-day col-xs-6">
+                                01/01/2017
+                            </div>
+                        </div>
+                        <div class="blog-detail">
+                            提供8万余种旅游产品供消费者选择，涵盖跟团，自助，自驾，酒店
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#3">
+                    <div class="blog-content">
+                        <div class="blog-info ">
+                            <div class="blog-name col-xs-6">
+                                WEB项目管理
+                            </div>
+                            <div class="blog-day col-xs-6">
+                                01/01/2017
+                            </div>
+                        </div>
+                        <div class="blog-detail">
+                            提供8万余种旅游产品供消费者选择，涵盖跟团，自助，自驾，酒店
+                        </div>
+                    </div>
+                </a> -->
+            </div>
+            <div class="col-md-5 col-xs-12 blog-border">
+                <div class="category">
+                    <div class="laster-blog">
+                        <span>博客类型</span>
+                        <span><a href="#">More</a></span>
+                    </div>
+                    <div class="row">
+                        <a href="#1">
+                            <div class="col-sm-6 col-xs-12 category-detail">
+                                <div class="category-img">
+                                    <img src='image/进入后台(1).png'>
+                                </div>
+                                <div class="category-word">
+                                    后台
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#2">
+                            <div class="col-sm-6 col-xs-12 category-detail">
+                                <div class="category-img">
+                                    <img src='image/安卓.png'>
+                                </div>
+                                <div class="category-word">
+                                    安卓
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="#3">
+                            <div class="col-sm-6 col-xs-12 category-detail">
+                                <div class="category-img">
+                                    <img src='image/前端.png'>
+                                </div>
+                                <div class="category-word">
+                                    前端
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#4">
+                            <div class="col-sm-6 col-xs-12 category-detail">
+                                <div class="category-img">
+                                    <img src='image/进入后台(1).png'>
+                                </div>
+                                <div class="category-word">
+                                    后台
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 成员 -->
+    <div class="member">
+        <div class="container content">
+            <div class="contain-head">
+                <h1>成员</h1>
+                <div class="line"></div>
+                <p>MEMBER</p>
+            </div>
+            <div class="contain-content">
+                <p>团结互助，We are 伐木累！</p>
+            </div>
+        </div>
+        <div class="member-detail container">
+            <div class="col-md-4 col-xs-12 member-contain">
+                <div class="member-show">
+                    <div class="member-img">
+                        <img src='image/zen.png'>
+                        <p class="member-name">
+                            曾亮辉(队长)
+                        </p>
+                    </div>
+                    <div class="member-word">
+                        <p class="member-box-wisdom">
+                            生活是面镜子，你对他笑，它就对你笑；你对他哭，它也会对你哭
+                        </p>
+                        <p class="member-detail">
+                            主要发展方向 后端、安卓、算法设计
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12  member-contain">
+                <div class="member-show">
+                    <div class="member-img">
+                        <img src='image/xin.png'>
+                        <p class="member-name">
+                            廖信达(副队长)
+                        </p>
+                    </div>
+                    <div class="member-word">
+                        <p class="member-box-wisdom">
+                            只有了解差距，才能缩短差距
+                        </p>
+                        <p class="member-detail">
+                            主要发展方向 算法设计 网站后台
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12  member-contain">
+                <div class="member-show">
+                    <div class="member-img">
+                        <img src='image/jin.jpg'>
+                        <p class="member-name">
+                            陆晋晖
+                        </p>
+                    </div>
+                    <div class="member-word" id="member-word">
+                        <p class="member-box-wisdom">
+                            认真学习的每一刻都让人愉快，因为天气很好，因为天气不好。因为天气刚刚好，每一刻我都喜欢
+                        </p>
+                        <p class="member-detail">
+                            主要发展方向 安卓开发
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="big-box">
+            <div class="box">
+                <div class="more" style="float:left">
+                    <div class="col-sm-7 more-word">
+                        更多
+                    </div>
+                    <div class="col-sm-5">
+                        <img src='image/方向箭头-向右.png'>
+                    </div>
+                </div>
+                <div class="more" style="background-color:#008cff; float:left">
+                    <div class="col-sm-7 more-word" style="color:white;">
+                        更多
+                    </div>
+                    <div class="col-sm-5">
+                        <img src='image/方向箭头-向上.png'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部介绍 -->
+    <div class="footer">
+        <div class="container footer-container">
+            <div class="col-md-5 col-sm-6">
+                <div class="footer-info">
+                    <div class="info-img">
+                        <img src='image/地址 (1).png'>
+                    </div>
+                    <div class="info-word">
+                        地址: 广东省湛江市麻章区湖光镇海大路1号
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <div class="info-img">
+                        <img src='image/mail.png'>
+                    </div>
+                    <div class="info-word">
+                        邮箱:ITAEM_2016@163.com
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <div class="info-img">
+                        <img src='image/网址.png'>
+                    </div>
+                    <div class="info-word">
+                        官网网址:tw@gdou.edu.cn
+                    </div>
+                </div>
+                <div class="info-word1">
+                    Copyright 2017 ITAEM.All Rights Rserved
+                </div>
+            </div>
+            <div class="col-md-4 foot-link">
+                <h4>友情链接</h4>
+                <div class="links">
+                    <a href="#">首页</a>
+                    <a href="#">博客</a>
+                    <a href="#">superStar</a>
+                    <a href="#">加入我们</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-img">
+                <div class="col-md-6 col-xs-6 ">
+                    <div class="link-img">
+                        <img src='image/QQ.png'>
+                    </div>
+                    <div class="link-word">
+                        QQ群:617051777
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-6 link-img1">
+                    <div class="link-img">
+                        <img src='image/weixin.jpg'>
+                    </div>
+                    <div class="link-word">
+                        微信二维码
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    // 轮播图 + 文字动画的 函数
+    $(function () {
+        $('.images .item:first, .control span:first').addClass('active');
+        var index = 1, // 设置初始index为1  避免定时器第一次调用index=0没有任何动作多用3秒
+            len = $('.images .item').length;
+
+        function autoPlay() {
+            // 注意：index++是指执行完后再自增1，所以index=0时，eq(index++)最开始是eq(0);
+            $('.images .item').removeClass('active').eq(index++).addClass('active');
+            // 此时index已经+1了
+            $('.item-info p.name').removeClass('active').eq(index - 1).addClass('active');
+            $('.item-info p.des').removeClass('active').eq(index - 1).addClass('active');
+            $('.control span').removeClass('active').eq(index - 1).addClass('active');
+            // 当index自增到len,也就是超出图片的数量时，归零.
+            if (index == len) {
+                index = 0;
+            }
+        }
+        // 定时器会循环触发函数autoPlay
+        loop = setInterval(autoPlay, 4500);
+
+        $('.control span').hover(
+            function () {
+                index = $(this).index();
+                autoPlay();
+                clearInterval(loop); // 清楚定时器，停止自动轮播
+            },
+            function () {
+                loop = setInterval(autoPlay, 4500); // 启动定时器
+            });
+    });
+
+    // 鼠标滚动事件
+    $(function () {
+        $(window).scroll(function () {
+            //$(window).scrollTop()这个方法是当前滚动条滚动的距离
+            //$(window).height()获取当前窗体的高度
+            //$(document).height()获取当前文档的高度
+            var bot = 50; //bot是底部距离的高度
+            if ($(window).scrollTop() != 0) {
+                //当底部基本距离+滚动的高度〉=文档的高度-窗体的高度时；
+                //我们需要去异步加载数据了
+                // alert('滚动了')
+                $('#header').addClass('white')
+                $('.icon-bar').css('background-color', 'black')
+                $('.collapse ul li a').addClass('black')
+            }
+            else if ($(window).scrollTop() === 0) {
+                // alert(1)
+                $('#header').removeClass('white')
+                $('.icon-bar').css('background-color', 'white')
+                $('.collapse ul li a').removeClass('black')
+            }
+        });
+    })
+
+    // 鼠标移入移出事件
+    $(function () {
+        $('.nav li a').mouseover(function () {
+            $(this).next().addClass('current')
+            $(this).addClass('currenta')
+        })
+        $('.nav li a').mouseleave(function () {
+            $(this).next().removeClass('current')
+            $(this).removeClass('currenta')
+        })
+
+        $('.col').hover(function () {
+            $(this).addClass('change')
+        }, function () {
+            $(this).removeClass('change')
+        })
+
+        $('.box').click(function () {
+            window.location = '#';
+        })
+
+        $('.box').hover(function () {
+            $('.box').offset(function (n, c) {
+                n = this.offsetleft
+                newPos = new Object();
+                newPos.left = c.left - 136;
+                return newPos;
+            })
+
+        }, function () {
+            $('.box').offset(function (n, c) {
+                n = this.offsetleft
+                newPos = new Object();
+                newPos.left = c.left + 136;
+                return newPos;
+            })
+        })
+    })
+
+    // 一个硬币有两面
+    $(function () {
+        var onoff = true
+        $(btn).click(function () {
+            if (onoff) {
+                $('.item p').css('z-index', '0')
+                onoff = false
+            } else {
+                $('.item p').css('z-index', '1')
+                onoff = true;
+            }
+        })
+    })
+
+    $(function () {
+        // var xhr = new XMLHttpRequest();
+
+        // xhr.open('get', "http://192.168.56.1:8080/itaem/blog/type/all/1/2")
+
+        // xhr.send(null)
+
+        // xhr.onreadystatechange = function () {
+        //     if (xhr.status == 200 && xhr.readyState == 4) {
+        //         var data = xhr.responseText;
+        //         var json = eval("(" + data + ")");
+        //         $.each(json.data,function(i,item){
+        //             console.log(item.createDate)
+        //         })
+        //     }
+        // }
+
+
+        $.ajax({
+            url: "http://192.168.56.1:8080/itaem/blog/type/all/1/2",
+            success: function (data) {
+                // 要这样解析的吗?
+                $.each(data.data, function (i, item) {
+                    $(Blo).append(
+                        "<a href="+item.blogUrl+">"+"<div class='blog-info '>"+"<div class='blog-name col-xs-6'>"+
+                        item.title+"<div>"+" <div class='blog-day col-xs-6'>"+item.createDate+"</div></div><div class='blog-detail'>"+
+                        item.introduction+"</div></div></a>"
+
+
+                    )
+                })
+            }
+        })
+    })
+
+</script>
